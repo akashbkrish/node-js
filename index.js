@@ -9,11 +9,22 @@ http
             response.write("<h1>Home page!</h1>");
             response.end();
             break;
+
             case"/about":
-                respnse.writeHead(404,{
+                respnse.writeHead(200,{
                     "Content-Type":"text/html",
                 });
                 response.write("<p>About Page!</p>");
+                response.end();
+                break;
+
+            default:
+                respnse.writeHead(404,{
+                    "Content-Type":"text/html",
+                });
+			console.log("404 Page has been implemented!!!");
+                response.write("<p>404 Page Not Found!</p>");
+
                 response.end();
                 break;
         }
