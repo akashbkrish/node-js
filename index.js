@@ -13,7 +13,7 @@ http
                 respnse.writeHead(404,{
                     "Content-Type":"text/html",
                 });
-			console.log("404 Page has been implemented");
+			console.log("404 Page has been implemented!!!");
                 response.write("<p>404 Page Not Found!</p>");
                 response.end();
                 break;
